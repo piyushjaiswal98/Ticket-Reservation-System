@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Sign in form</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+body{
+background-color:#2A2D5C;
+}
+.first{
+background-color:#24264c;
+height:500px;
+width:550px;
+margin: 70px 400px 400px 480px;
+}
+h1{
+background-color:#080B40;
+color:snow;
+text-align:center;
+font-family:helvetica;
+padding-bottom:10px;
+padding-top:10px;
+}
+.second{
+background-color:#080B40;
+height:70px;
+width:100%;
+margin-top:50px;
+
+}
+
+ #b{
+height:35px;
+width:470px;
+margin:5px 40px 0px 40px;
+background-color:rgb(36,38,50);
+padding: 2px 2px 6px 8px ;
+border: 1px solid rgb(36,38,50);
+border-radius:4px;
+
+}
+#a{
+height:35px;
+margin:25px 40px 0px 40px;
+width:470px;
+background-color:rgb(36,38,50);
+padding: 2px 2px 6px 8px ;
+border: 1px solid rgb(36,38,50);
+border-radius:4px;
+}
+input[placeholder]{
+font-size:15px;
+}
+#c {
+    background-color: #4CAF50;
+    border: none;
+    color: snow;
+    padding: 5px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	height:45px;
+margin:25px 40px 0px 40px;
+width:480px;
+border-radius:4px;
+border-bottom:4px solid #276E28;
+}
+input[value]{
+font-size:25px;
+font-weight:bold;
+
+}
+input[type=text]{
+color:snow;
+}
+input[type=password]{
+color:snow;
+}
+#d{
+font-size:15px;
+color:snow;
+margin-top:25px; 
+margin-left:40px;
+}
+span{
+color:snow;
+font-size:15px;
+font-family:verdana;
+}
+#for{
+text-decoration:none;
+color:snow;
+margin-left:200px;
+font-size:15px;
+font-family:verdana;
+}
+.face{
+height:40px;
+margin:50px 40px 0px 40px;
+width:200px;
+background-color:rgb(47,51,147);
+border-top:2px solid rgb(47,51,147);
+border-bottom:2px solid rgb(47,91,147);
+border-radius:4px;
+}
+img{
+height:35px;
+width:30px;
+}
+#f{
+margin-left:3px;
+margin-bottom:8px;
+color:snow;
+font-size:15px;
+font-family:verdana;
+}
+.twi{
+float:right;
+height:40px;
+margin:-43px 40px 0px 250px;
+width:200px;
+background-color:rgb(66,177,238);
+border-top:2px solid rgb(47,51,147);
+border-bottom:2px solid rgb(47,91,147);
+border-radius:4px;
+}
+#abc{
+margin:3px 0px -5px 10px;
+}
+#t{
+margin-bottom:300px;
+}
+#n{
+margin-left:30px;
+text-decoration:none;
+color:snow;
+font-size:15px;
+font-family:verdana;
+}
+#si{
+background-color: #3d9e70;
+    border:none;
+	color: snow;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	height:45px;
+margin:13px 10px 0px 210px;
+width:130px;
+border-radius:4px;
+border-bottom:4px solid #276E28;
+}
+.face:hover{
+cursor: pointer;}
+.twi:hover{cursor: pointer;}
+a{
+text-decoration:none;}
+body{
+display:none;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("body").fadeIn(2000);
+});
+</script>
+
+</head>
+
+<body>
+<div class="first">
+<h1>Sign In</h1>
+<form onsubmit="return myfn()" method="post" action="log.php">
+<input id="b" type="text" name="uid" placeholder="User Name "><br>
+<input id="a" type="password" name="pwd" placeholder="Password"><br>
+<input id="c" type="submit" value="LOGIN"><br>
+<input id="d" type="checkbox" name="rm" value="rm"> <span>Remember me</span>
+<a id="for" href="#">Forgot Password?</a>
+<div class="face">
+<a href="https://www.facebook.com/login/" ><img src="facebook_icon.png" alt="facebook"><span id="f">Login with Facebook</span></a>
+</div>
+<div class="twi">
+<a href="https://twitter.com/login?lang=en" ><img id="abc" src="twitter_318-136405.jpg" alt="twitter"><span id="t">Login with Twitter</span> </a>
+</div>
+<div class="second">
+<a id="n" href="http://localhost/tourist_guide/signup.html">Need new account?</a>
+<a id="new" href="http://localhost/tourist_guide/signup.html"> <input id="si" type="button" value="Sign Up"></a>
+</form>
+</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title>Verification</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<style>
+	@-webkit-keyframes anim{
+            0%{background-color:LightSeaGreen;}
+            25%{background-color:Coral; }
+            50%{background-color:DeepSeaBlue;}
+            75%{background-color:Coral;}
+            100%{background-color:LightSeaGreen;}
+         } 
+         @-webkit-keyframes anim2{
+            0%{transform: scale(1.2);}
+            25%{transform: scale(1.4); }
+            50%{transform: scale(1.6);}
+            75%{transform: scale(1.4);}
+            100%{transform: scale(1.2);}
+         } 
+         @-webkit-keyframes example {
+     {font-size: 24px}
+    to {background-color: 40px;}
+    }
+         .heading{
+            width:100%;
+            height: 100px;
+            -webkit-animation: anim 4s ease-in 2s infinite;
+            text-align: center;
+            font-size: 24px;
+            font-family:Raleway;
+            padding:15px;
+            
+         }
+         .title{
+            -webkit-animation: example 4s ease-in 2s infinite;
+         }
+         .h1{
+            -webkit-animation: anim2 4s ease-in 2s infinite;
+         }
+	</style>
+	</head>
+<body>
+
+
+<body>
+<div class="heading">
+<div class="title">
+<h1 class="h1">Train Booking</h1>
+</div>
+</div>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html">RAILWAY RESERVATION</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="http://localhost/tourist_guide/welcome1.php">Home</a></li>
+	        <li><a href="enquiry.php">Enquire | Book</a></li>
+					<li><a href="user_login.html">History | Cancellation</a></li>
+	      </ul>
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="http://localhost/tourist_guide/signout.php"> Sign Out</a></li>
+      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+<p align="center" id="loginpage"><br><TR></tr>
+<form name="loginform" action="user_login.php" method="post"><TR></tr>
+  <table font-family = "Georgia" class = "table" width="400" height="178"  align="center" cellpadding="1"cellspacing="1" border="3">
+    <tr>
+      <td height="41" colspan="2" align="center"><h2><b>Check Account</b></h2></td>
+    </tr>
+    <tr>
+      <td width="170" height="40"  align="center"><b>Userid</b></td>
+      <td width="213">
+         <input type="text" name="mno" style="background" />
+      </font></td>
+    </tr>
+    <tr>
+      <td height="38" align="center"><b>Password</b></td>
+      <td>
+        <input type="password" name="password" maxlength="8">
+        </font></td>
+    </tr>
+    <br />
+    <tr>
+      <td height="48" colspan="2" align="center">
+        <input type="submit"  value="Submit" name="ok" onClick="return fun_val();"/>
+
+    </tr>
+  </table>
+<p>&nbsp;</p>
+</form>
+</body>
+</html>

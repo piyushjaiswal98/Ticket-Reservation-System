@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Open+Sans|Playfair+Display" rel="stylesheet">
+<style>
+body{
+background-color:rgb(54,79,121);
+}
+h1{
+text-align: center;
+}
+hr{
+margin-bottom: 30px;
+}
+div.container{
+width: 560px;
+height: 610px;
+margin:90px 00px 0px 550px;
+font-family: Raleway;
+position:relative;
+
+}
+div.main{
+width: 320px;
+float:left;
+padding: 10px 55px 40px;
+background-color: rgba(177, 142, 175, 0.65);
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+}
+input[type=text],[type=password],[type=email] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #00F5FF;
+border: 2px solid #00F5FF;
+color: #4f4f4f;
+font-size: 16px;
+}
+label{
+color: #464646;
+
+font-size: 14px;
+font-weight: bold;
+}
+#register {
+font-size: 20px;
+margin-top: 15px;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid #0F799E;
+padding: 7px 35px;
+color: white;
+text-shadow: 0px 1px 0px #13506D;
+font-weight: bold;
+border-radius: 2px;
+cursor: pointer;
+width: 100%;
+}
+#register:hover{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+body{
+display:none;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("body").fadeIn(2000);
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="main">
+<form class="form" method="post" action="includes/signup.php">
+<h1>Signup Form</h1>
+<label>firstname :</label>
+<input type="text" name="first" id="name" placeholder="Input firstname">
+<label>lastname :</label>
+<input type="text" name="last" id="name" placeholder="Input lastname">
+<label>Email :</label>
+<input type="text" name="demail" id="email" placeholder="Input Email">
+<label>username :</label>
+<input type="text" name="uid" id="password" placeholder="Enter username">
+<label>Password :</label>
+<input type="password" name="pwd" id="cpassword" placeholder="enter Password">
+<button type="submit" name="submit">Sign up</button>
+</form>
+</div>
+<div class="image">
+
+</div>
+
+<script>
+$(document).ready(function() {
+$("#register").click(function() {
+var name = $("#name").val();
+var email = $("#email").val();
+var password = $("#password").val();
+var cpassword = $("#cpassword").val();
+if (name == '' || email == '' || password == '' || cpassword == '') {
+alert("Please fill all fields...!!!!!!");
+} else if((name.length)<7){
+alert("Username must be atleast 7 characters in length...!!!!");}
+else if ((password.length) < 8) {
+alert("Password should atleast 8 character in length...!!!!!!");
+} else if (!(password).match(cpassword)) {
+alert("Your passwords don't match. Try again?");
+} else {
+alert(data);
+}
+});
+});
+
+
+</script>
+</body>
+</html>
